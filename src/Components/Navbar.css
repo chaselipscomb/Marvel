@@ -1,0 +1,80 @@
+.navbar {
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar div {
+    display:flex;
+    flex-grow: 1;
+    border-style: ridge;
+    justify-content: center;
+    align-items: center;
+}
+.navbar form {
+    display:flex;
+    flex-grow: 1;
+    height: 100%;
+}
+.navtitlediv {
+    justify-content: center;
+    width: auto;
+}
+.navtitle {
+    /* margin-left: 5vw;*/
+    align-self: center; 
+    cursor: pointer;
+    font-size: 25px;
+
+}
+.navinput {
+    width: 100%;
+    font-size: 25px;
+}
+.navbutton {
+    font-size: 25px;
+}
+.navinputdiv {
+width: 20vw;    
+}
+.navtab {
+    flex-shrink: 4;
+    font-size: 25px;
+}
+.tabcolor {
+    color: darkslategrey;
+}
+
+@media only screen and (max-width: 800px) {
+    .navtitle {
+        font-size: 20px;
+    }
+    .navinput {
+        font-size: 20px;
+    }
+    .navbutton {
+        font-size: 20px;
+    }
+    .navtab {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .navtitle {
+        font-size: 15px;
+    }
+    .navinput {
+        font-size: 15px;
+    }
+    .navbutton {
+        font-size: 10px;
+    }
+    .navtab {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .navbar {
+        display: none;
+    }
+}

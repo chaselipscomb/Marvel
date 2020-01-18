@@ -1,0 +1,9 @@
+.jumbotron {
+    display: flex;
+    height: 30vh;
+    background-image: linear-gradient(white, rgb(138, 173, 238));
+    justify-content: center;
+}
+.title {
+    align-self: center;
+}
