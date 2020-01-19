@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import './Navbar.css'
-import { ButtonToolbar, Dropdown, DropdownButton, SplitButton} from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 
 function Navbar() {
     return (
@@ -18,28 +19,20 @@ function Navbar() {
 
                 <div className="navtab"><a href="#"><span className="tabcolor">Login</span></a></div>
             </div>
-            <div className="fas fa-bars">&#xf0c9; ccc</div>
-            <i class='fas fa-bars'>dd</i>
-            <ButtonToolbar>
-                {[DropdownButton, SplitButton].map((DropdownType, idx) => (
-                    <DropdownType
-                        size="lg"
-                        title="Drop small"
-                        id={`dropdown-button-drop-${idx}`}
-                        key={idx}
-                    >
-                        <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                        <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                        <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
+            <div className="dropbtndiv">
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="#">Search</a>
+                        <a href="#">Versus</a>
+                        <a href="#">Results</a>
                         <Dropdown.Divider />
-                        <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-                    </DropdownType>
-                ))}
-            </ButtonToolbar>
-            <ButtonToolbar></ButtonToolbar>
-
+                        <a className="logindropdown" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
         </Fragment>
     )
-} IMPLEMENT SMALL DROPDOWN FOR MOBILE DEVICES
+}
 
 export default Navbar;

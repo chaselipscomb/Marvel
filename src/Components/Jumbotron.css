@@ -1,4 +1,4 @@
-.jumbotron {
+.homejumbotron {
     display: flex;
     height: 30vh;
     background-image: linear-gradient(white, rgb(138, 173, 238));
